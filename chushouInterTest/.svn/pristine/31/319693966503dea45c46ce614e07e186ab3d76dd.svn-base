@@ -1,0 +1,135 @@
+# coding=utf-8
+'''
+Created on May 23, 2019
+
+@author: canace
+'''
+import sys
+sys.path.append('..')
+import json
+import requests
+import chushouPub.BusinessBases as bb
+import chushouPub.ipConfigs as ip
+import chushouPub.poolDbJellyfishUser as bsUser
+import unittest
+import sys
+sys.path.append('..')
+from common.configHttp import RunMain
+import paramunittest
+import geturlParams
+import urlparse
+import readExcel
+import common.Log
+# RunMain = common.configHttp.RunMain
+log = common.Log.logger
+  
+url = geturlParams.geturlParams().get_Url()  # 调用我们的geturlParams获取我们拼接的URL
+login_xls = readExcel.readExcel().get_xls('userCase.xlsx', 'login')
+ 
+  
+@paramunittest.parametrized(*login_xls)
+class testUserLogin(unittest.TestCase):
+ 
+    def setParameters(self, case_name, path, query, method):
+        """
+        set params
+        :param case_name:
+        :param path
+        :param query
+        :param method
+        :return:
+        """
+        self.case_name = str(case_name)
+        self.path = str(path)
+        self.query = str(query)
+        self.method = str(method)
+  
+    def description(self):
+        """
+        test report description
+        :return:
+        """
+        self.case_name
+  
+    def setUp(self):
+        """
+        :return:
+        """
+        print(self.case_name + "测试开始前准备")
+  
+    def test01case(self):
+        uid = 3399
+        cur = bsUser.getChuShouUserProfileUid(uid)
+        username = cur['username']
+        password = cur['password']  # 'e10adc3949ba59abbe56e057f20f883e'
+        self.checkResult(username, password)
+  
+    def tearDown(self):
+        print("测试结束，输出log完结\n\n")
+  
+    def checkResult(self, username, password):  # 断言
+        """
+        check test result
+        :return:
+        """
+        url = ip.IP + '/api/chushou-login.htm'
+        t = bb.getTimeStamp()  # 获取时间戳
+        _appkey = bb.getAppkey()
+        _appVersion = ip.version
+        values = {'password':password, 'username':username, '_appkey':_appkey, '_t':t, '_appVersion':_appVersion }
+#         values = dict(values, **bb.CommonParameter(_appkey, "post"))
+        _sign = bb.getSignValue(values)
+        values.update({'_sign':_sign})  # 将_sign加入到values中
+        f = requests.post(url, data=values)
+        print url
+        print values
+        print f.text.encode('utf-8')
+        bbs = f.json()
+        assert bbs['code'] == 0
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+# import unittest
+# 
+# 
+# class testUserLogin(unittest.TestCase):
+# 
+#     def __init__(self, *args, **kwargs):
+#         unittest.TestCase.__init__(self, *args, **kwargs)
+# 
+# #     @classmethod
+# #     def setUpClass(cls):
+# #         print '这是所有case的前置条件01'
+# #  
+#     def setUp(self):
+#         print '这是每条case的前置条件01'
+#   
+#     def tearDown(self):
+#         print '这是每条case的后置条件01'
+#   
+#     def testThird_01(self):  # 测试用例的命名必须以test开头，否则不予执行
+#         print '01: 第三条case'
+#  
+#     def testFirst_01(self): 
+#         print '01: 第一条case'
+#  
+#     @unittest.skip('不执行这条case')  # 跳过这条case
+#     def testSecond_01(self):
+#         print '01: 第二条case'
+#  
+#     def testFourth_01(self):
+#         print '01: 第四条case'
+
+#     @classmethod
+#     def tearDownClass(cls):
+#         print '这是所有case的后置条件01'
+
+# if __name__ == '__main__':
+#     suite = unittest.TestSuite()
+#     suite.addTest(testUserLogin('testThird_01'))  # 将需要执行的case添加到Test Suite中，没有添加的不会被执行
+#     suite.addTest(testUserLogin('testSecond_01'))
+#     suite.addTest(testUserLogin('testFirst_01'))
+#     unittest.TextTestRunner().run(suite)  # 将根据case添加的先后顺序执行
+    

@@ -1,0 +1,33 @@
+2019-05-28 15:28:12,083 - logs… - INFO - https://vchushou.com/api/chushou-login.htm
+2019-05-28 15:28:12,083 - logs… - INFO - {u'username': u'15812345611', '_sign': 'aafff925c1003d7163439ec791069677', u'password': u'e10adc3949ba59abbe56e057f20f883e', '_appkey': 'CSIos', '_appVersion': '5.4.5', '_t': u'1559028492078'}
+2019-05-28 15:28:12,168 - logs… - INFO - {"code":0,"message":"","data":{"forcePhoneNumVerified":false,"qqProfile":{"expireTime":-1,"openid":"","accessToken":"","uid":-1,"nickname":"","avatar":"","expired":true},"signTask":{"hasSigned":false,"continuousDays":0,"desc":"神秘礼物重出江湖喽！"},"isNewUser":false,"user":{"uid":3399,"nickname":"♡two兔兔two♡","avatar":"https://kascdn.kascend.com/jellyfish/avatar/180929/1538230457294.png!jellyfishavatar","gender":"unknow","signature":"OOO\nPPP\n吃吃吃","rank":{"point":91884254,"noblePoint":0,"nobleState":1},"professional":1,"meta":{"userMixedPoint":{"point":91884254,"noblePoint":0,"nobleState":1},"userRankPoint":91884254,"avatarFrame":["https://kascdn.kascend.com/jellyfish/avatar-frame/v3/weak_star_7.png"],"nobleMedal":"https://cdn.kascend.com/jellyfish/medal/default/6/v2/noble_1.png"},"level":100,"levelMedal":"https://kascdn.kascend.com/jellyfish/user/level/100@3x.png"},"roomList":[{"id":300317,"name":"1","announcement":"试点1111\n测试1111\n323v 啊 v 的\n大师傅撒风","logo":"https://kascdn.kascend.com/jellyfish/uiupload/default/default-2.png","creator":{"uid":3399,"nickname":"♡two兔兔two♡","avatar":"https://kascdn.kascend.com/jellyfish/avatar/180929/1538230457294.png!jellyfishavatar","gender":"unknow","signature":"OOO\nPPP\n吃吃吃","rank":{"point":0,"noblePoint":0,"nobleState":0},"professional":1,"level":100,"levelMedal":"https://kascdn.kascend.com/jellyfish/user/level/100@3x.png"},"professional":1,"subscriberCount":305,"shareUrl":"https://vchushou.com/room/m-300317.htm?hmsr=share&hmpl=unknow&hmcu=unknow&hmkw=&hmci=","lastLiveTime":1558700360000,"lastLiveTimeDesc":"3天前"}],"needInterest":false,"token":"e08494fb67380eb9gd47","verifyInfo":{"areaCode":86,"emailAddress":"ssdm*********@wer.com","youthModeOn":false,"bankCard":"6***************5","phone":"1*********1","idCard":"uhh","showBankCard":0,"hasPassword":1}}}
+2019-05-28 15:28:12,222 - logs… - INFO - https://vchushou.com/api/chushou-login.htm
+2019-05-28 15:28:12,222 - logs… - INFO - {u'username': u'1581234561', '_sign': 'b85247c6035e024e7e153f103b80c69e', u'password': u'e10adc3949ba59abbe56e057f20f883e', '_appkey': 'CSAndroid', '_appVersion': '5.4.5', '_t': u'1559028492213'}
+2019-05-28 15:28:12,282 - logs… - INFO - {"code":1100,"message":"该手机号尚未注册","data":null}
+2019-05-28 15:28:12,376 - logs… - INFO - https://vchushou.com/api/subscriber/subscribe.htm
+2019-05-28 15:28:12,377 - logs… - INFO - {'_sign': 'b92c258145f30deeb14e91e1450359cd', u'token': 'E08494FB67380EB9gD47', '_appVersion': '5.4.5', u'uid': u'400', '_appkey': 'CSIos', '_t': u'1559028492372'}
+2019-05-28 15:28:12,432 - logs… - INFO - {"code":404,"message":"主播不存在","data":null}
+2019-05-28 15:28:12,474 - logs… - INFO - https://vchushou.com/api/chushou-login.htm
+2019-05-28 15:28:12,474 - logs… - INFO - {u'username': u'15812345611', '_sign': '1cdd80f8bd40bf3485038198e156999e', u'password': u'e10adc3949ba59abbe56e057f20f', '_appkey': 'CSAndroid', '_appVersion': '5.4.5', '_t': u'1559028492467'}
+2019-05-28 15:28:12,517 - logs… - INFO - {"code":1101,"message":"密码不正确,请重新输入","data":null}
+2019-05-28 15:28:12,622 - logs… - INFO - https://vchushou.com/api/subscriber/subscribe.htm
+2019-05-28 15:28:12,622 - logs… - INFO - {'_sign': '05a952e17ffe72fc618d507ff025b09e', u'token': 'E08494FB67380EB9gD47', '_appVersion': '5.4.5', '_appkey': 'CSIos', '_t': u'1559028492615', u'roomId': u'3000100'}
+2019-05-28 15:28:12,681 - logs… - INFO - {"code":0,"message":"","data":null}
+2019-05-28 15:28:12,784 - logs… - INFO - https://vchushou.com/api/subscriber/subscribe.htm
+2019-05-28 15:28:12,784 - logs… - INFO - {'_sign': 'b380f3a838fbf1c732b6cd7edabb8111', u'token': 'E08494FB67380EB9gD47', '_appVersion': '5.4.5', u'uid': u'3000', '_appkey': 'CSIos', '_t': u'1559028492779'}
+2019-05-28 15:28:12,898 - logs… - INFO - {"code":0,"message":"","data":null}
+2019-05-28 15:28:12,993 - logs… - INFO - https://vchushou.com/api/subscriber/subscribe.htm
+2019-05-28 15:28:12,993 - logs… - INFO - {'_sign': '07d848c1d3e6aeba0adff34d54174ef1', u'token': 'E08494FB67380EB9gD47', '_appVersion': '5.4.5', '_appkey': 'CSAndroid', '_t': u'1559028492988', u'roomId': u'300000'}
+2019-05-28 15:28:13,046 - logs… - INFO - {"code":404,"message":"房间不存在","data":null}
+2019-05-28 15:28:13,135 - logs… - INFO - https://vchushou.com/api/subscriber/subscribe.htm
+2019-05-28 15:28:13,136 - logs… - INFO - {'_sign': 'bf1de391c280fbe07c7c1f6db53b075d', u'token': 'E08494FB67380EB9gD47', '_appVersion': '5.4.5', u'uid': u'300', '_appkey': 'CSIos', '_t': u'1559028493130'}
+2019-05-28 15:28:13,189 - logs… - INFO - {"code":404,"message":"主播不存在","data":null}
+2019-05-28 15:28:13,289 - logs… - INFO - https://vchushou.com/m/subscriber/unsubscribe-by-uid.htm
+2019-05-28 15:28:13,289 - logs… - INFO - {'_sign': 'ab2faa36de25b3bb3bfcd6a36cfd604b', u'token': 'E08494FB67380EB9gD47', '_appVersion': '5.4.5', u'uid': u'3000', '_appkey': 'CSIos', '_t': u'1559028493283'}
+2019-05-28 15:28:13,425 - logs… - INFO - {"code":0,"message":"","data":null}
+2019-05-28 15:28:13,527 - logs… - INFO - https://vchushou.com/api/subscriber/unsubscribe.htm
+2019-05-28 15:28:13,527 - logs… - INFO - {'_sign': '893b2b15bc2a7957e2931d08cbb7b010', u'token': 'E08494FB67380EB9gD47', '_appVersion': '5.4.5', u'uid': u'3100', '_appkey': 'CSAndroid', '_t': u'1559028493522'}
+2019-05-28 15:28:13,598 - logs… - INFO - {"code":0,"message":"","data":null}
+2019-05-28 15:28:13,701 - logs… - INFO - https://vchushou.com/m/subscriber/unsubscribe-by-uid.htm
+2019-05-28 15:28:13,701 - logs… - INFO - {'_sign': '3bc82b9a6c52f42e88c433f6b20d6b54', u'token': 'E08494FB67380EB9gD47', '_appVersion': '5.4.5', u'uid': u'300000', '_appkey': 'CSAndroid', '_t': u'1559028493695'}
+2019-05-28 15:28:13,748 - logs… - INFO - {"code":1401,"message":"此用户不存在，不能进行此操作","data":null}

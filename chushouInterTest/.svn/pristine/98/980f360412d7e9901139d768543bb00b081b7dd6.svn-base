@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//chushouPub/BusinessBases.py=utf-8
+encoding//chushouPub/ipConfigs.py=utf-8
+encoding//chushouPub/poolDbJellyfishUser.py=utf-8
+encoding//common/HTMLTestRunner.py=utf-8
+encoding//common/Log.py=utf-8
+encoding//common/configDb.py=utf-8
+encoding//common/configEmail.py=utf-8
+encoding//common/configHttp.py=utf-8
+encoding//testCase/test01case.py=utf-8
+encoding/getpathInfo.py=utf-8
+encoding/geturlParams.py=utf-8
+encoding/readConfig.py=utf-8
+encoding/readExcel.py=utf-8
+encoding/runAll.py=utf-8
+encoding/test_api.py=utf-8

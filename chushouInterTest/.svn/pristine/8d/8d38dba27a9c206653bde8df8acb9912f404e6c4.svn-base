@@ -1,0 +1,8 @@
+2019-05-24 17:39:21,345 - logs… - INFO - test01case.py
+2019-05-24 17:39:21,684 - logs… - INFO - http://www.xxx.com/login?name=xiaoming&pwd=111
+2019-05-24 17:39:21,684 - logs… - INFO - {'pwd': ['111'], 'name': ['xiaoming']}
+2019-05-24 17:39:21,701 - logs… - INFO - http://www.xxx.com/login?name=xiaoming&pwd=111222
+2019-05-24 17:39:21,701 - logs… - INFO - {'pwd': ['111222'], 'name': ['xiaoming']}
+2019-05-24 17:39:21,704 - logs… - INFO - http://www.xxx.com/login?name=xiaoming&pwd=
+2019-05-24 17:39:21,704 - logs… - INFO - {'name': ['xiaoming']}
+2019-05-24 17:39:21,709 - logs… - INFO - *********TEST END*********
